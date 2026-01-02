@@ -17,31 +17,23 @@
 
 [Pipeline Layers](#-Pipeline-Layers)
 
-[Ingestion Layer Producers](#-Ingestion-Layer-Producers)
+[Core Data Flow Diagram](#-Core-Data-Flow-Diagram)
 
-[Bronze Layer — Raw Data](#-Bronze-Layer—Raw-Data)
+[Tech Stack](#-Tech-Stack)
 
-[Silver Layer — Cleaned Data](#-Silver-Layer—Cleaned-Data)
+[Key Engineering Decisions](#-Key-Engineering-Decisions)
 
-Gold Layer — Aggregated Metrics
+[Why Delta Lake?](#-Why-Delta-Lake?)
 
-Core Data Flow Diagram
+[Why Local Spark Instead of Databricks Community Edition?](#-Why-Local-Spark-Instead-of-Databricks-Community-Edition?)
 
-Tech Stack
+[Schema Evolution Strategy](#-Schema-Evolution-Strategy)
 
-Key Engineering Decisions
+[Features](#-Features)
 
-Why Delta Lake?
+[Setup & Installation](#-Setup-&-Installation)
 
-Why Local Spark Instead of Databricks Community Edition?
-
-Schema Evolution Strategy
-
-Features
-
-Setup & Installation
-
-Demo
+[Demo](#-Demo)
 
 ---
 
@@ -115,7 +107,7 @@ The pipeline follows a **Lakehouse Medallion Architecture**.
 
 ## 🔹 Pipeline Layers
 
-### 1. Ingestion Layer Producers
+### 1. Ingestion Layer
 - **Source:** Coinbase & Binance WebSocket APIs
 - **Language:** Python
 - **Transport:** Apache Kafka (Confluent Cloud)
@@ -252,6 +244,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
