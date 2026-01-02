@@ -34,8 +34,9 @@ CryptoPulse decouples ingestion from processing using **Apache Kafka** and proce
 </p>
 
 ---
-## Project Structure
+## 📁 Project Structure
 
+```text
 .crypto-pulse/
 ├── data/                         # Local Data Lake
 │   ├── delta/                    # ACID Tables (Bronze / Silver / Gold)
@@ -63,9 +64,10 @@ CryptoPulse decouples ingestion from processing using **Apache Kafka** and proce
 │   │   ├── check_bronze.py
 │   │   └── check_gold.py
 │   └── __init__.py
-├── .env                          # Secrets 
+├── .env                          # Secrets (Git ignored)
 ├── pyproject.toml
 └── README.md
+```
 
 The pipeline follows a **Lakehouse Medallion Architecture**.
 
@@ -204,6 +206,7 @@ Data quality validation with Great Expectations
 Real-time arbitrage alerting
 
 Cloud-native execution (EMR / Databricks / Kubernetes)
+
 
 
 
