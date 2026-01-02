@@ -3,6 +3,45 @@
 
 **CryptoPulse** is a real-time data engineering project built using **Kappa Architecture** and **Lakehouse design principles**. It ingests live cryptocurrency trade data, guarantees durability with Kafka, and processes streams with Spark Structured Streaming to detect arbitrage opportunities while maintaining high-quality historical data for analytics and backtesting.
 
+--
+## 📚 Table of Contents
+
+Problem Statement
+
+Solution Overview
+
+Architecture Diagram
+
+Project Structure
+
+Pipeline Layers
+
+Ingestion Layer (Producers)
+
+Bronze Layer — Raw Data
+
+Silver Layer — Cleaned Data
+
+Gold Layer — Aggregated Metrics
+
+Core Data Flow Diagram
+
+Tech Stack
+
+Key Engineering Decisions
+
+Why Delta Lake?
+
+Why Local Spark Instead of Databricks Community Edition?
+
+Schema Evolution Strategy
+
+Features
+
+Setup & Installation
+
+Demo
+
 ---
 
 ## 📌 Problem Statement
@@ -212,5 +251,6 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
