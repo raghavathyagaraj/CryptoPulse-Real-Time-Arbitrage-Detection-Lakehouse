@@ -23,16 +23,6 @@
 
 [Key Engineering Decisions](#-Key-Engineering-Decisions)
 
-[Why Delta Lake?](#-Why-Delta-Lake?)
-
-[Why Local Spark Instead of Databricks Community Edition?](#-Why-Local-Spark-Instead-of-Databricks-Community-Edition?)
-
-[Schema Evolution Strategy](#-Schema-Evolution-Strategy)
-
-[Features](#-Features)
-
-[Setup Installation](#-Setup-Installation)
-
 [Demo](#-Demo)
 
 ---
@@ -245,6 +235,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
