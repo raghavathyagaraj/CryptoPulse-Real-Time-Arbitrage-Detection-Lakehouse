@@ -227,7 +227,8 @@ By storing raw JSON in the Bronze layer:
 pip install uv
 ```
 
-📸 Demo
+## 📸 Demo
+
 Real-Time Dashboard
 Here is the live Streamlit dashboard visualizing the 1-minute OHLC candles from the Gold layer.
 <p align="center">
@@ -244,6 +245,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
