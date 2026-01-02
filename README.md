@@ -195,18 +195,22 @@ By storing raw JSON in the Bronze layer:
 pip install uv
 ```
 
-📈 Future Enhancements
+📸 Demo
+Real-Time Dashboard
+Here is the live Streamlit dashboard visualizing the 1-minute OHLC candles from the Gold layer.
+<p align="center">
+  <img src="images/live_dashobard,png.png" width="900">
+</p>
 
-Live dashboards (Grafana / Streamlit)
+Pipeline Orchestration
+The custom Python orchestrator managing 4 concurrent Spark jobs. !
+<p align="center">
+  <img src="images/orchestrator_Screenshot.png" width="900">
+</p>
 
-Dockerized deployment
-
-Data quality validation with Great Expectations
-
-Real-time arbitrage alerting
-
-Cloud-native execution (EMR / Databricks / Kubernetes)
-
-
+Kafka Confluent Data Lineage Graph
+<p align="center">
+  <img src="images/kafka_confluent_topic_lineage.png" width="900">
+</p> 
 
 
