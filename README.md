@@ -31,7 +31,7 @@
 
 [Features](#-Features)
 
-[Setup & Installation](#-Setup-&-Installation)
+[Setup & Installation](#-Setup-Installation)
 
 [Demo](#-Demo)
 
@@ -215,7 +215,7 @@ By storing raw JSON in the Bronze layer:
 
 ---
 
-## 💻 Setup & Installation
+## Setup Installation
 
 ### Prerequisites
 - Python 3.10+
@@ -245,6 +245,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
