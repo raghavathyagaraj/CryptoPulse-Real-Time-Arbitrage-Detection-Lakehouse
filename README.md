@@ -30,7 +30,7 @@ CryptoPulse decouples ingestion from processing using **Apache Kafka** and proce
 
 ## 🏗 Architecture Diagram
 <p align="center">
-  <img src="images/Gemini_Generated_Image_dgqjf0dgqjf0dgqj.png" width="900">
+  <img src="images/images/architecture for crypto.png" width="900">
 </p>
 
 The pipeline follows a **Lakehouse Medallion Architecture**.
@@ -170,3 +170,4 @@ Data quality validation with Great Expectations
 Real-time arbitrage alerting
 
 Cloud-native execution (EMR / Databricks / Kubernetes)
+
