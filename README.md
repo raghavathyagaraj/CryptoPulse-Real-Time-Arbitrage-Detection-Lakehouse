@@ -9,19 +9,19 @@
 
 [Problem Statement](#-Problem-Statement)
 
-Solution Overview
+[Solution Overview](#-Solution-Overview)
 
-Architecture Diagram
+[Architecture Diagram](#-Architecture-Diagram)
 
-Project Structure
+[Project Structure](#-Project-Structure)
 
-Pipeline Layers
+[Pipeline Layers](#-Pipeline-Layers)
 
-Ingestion Layer (Producers)
+[Ingestion Layer Producers](#-Ingestion-Layer-Producers)
 
-Bronze Layer — Raw Data
+[Bronze Layer — Raw Data](#-Bronze-Layer—Raw-Data)
 
-Silver Layer — Cleaned Data
+[Silver Layer — Cleaned Data](#-Silver-Layer—Cleaned-Data)
 
 Gold Layer — Aggregated Metrics
 
@@ -115,7 +115,7 @@ The pipeline follows a **Lakehouse Medallion Architecture**.
 
 ## 🔹 Pipeline Layers
 
-### 1. Ingestion Layer (Producers)
+### 1. Ingestion Layer Producers
 - **Source:** Coinbase & Binance WebSocket APIs
 - **Language:** Python
 - **Transport:** Apache Kafka (Confluent Cloud)
@@ -252,6 +252,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
