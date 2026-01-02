@@ -33,6 +33,40 @@ CryptoPulse decouples ingestion from processing using **Apache Kafka** and proce
   <img src="images/architecture_crypto.png" width="900">
 </p>
 
+---
+## Project Structure
+
+.crypto-pulse/
+├── data/                         # Local Data Lake
+│   ├── delta/                    # ACID Tables (Bronze / Silver / Gold)
+│   └── checkpoints/              # Spark Streaming Checkpoints
+├── logs/                         # Runtime logs
+├── images/                       # Architecture & Pipeline Screenshots
+│   ├── architecture_crypto.png
+│   ├── dataflow_diagram_crypto.png
+│   ├── kafka_confluent_topic_lineage.png
+│   ├── kafka_messages.png
+│   ├── gold_layer_data.png
+│   ├── live_dashboard.png
+│   └── orchestrator_screenshot.png
+├── src/
+│   ├── dashboard/
+│   │   └── app.py                # Streamlit Visualization
+│   ├── jobs/
+│   │   ├── ingestion_bronze.py   # Kafka → Bronze (Delta)
+│   │   ├── process_silver.py     # Bronze → Silver (Cleaning)
+│   │   ├── gold_layer.py         # Silver → Gold (Aggregation)
+│   │   └── orchestrator.py       # Pipeline Orchestration
+│   ├── producers/
+│   │   └── main.py               # WebSocket → Kafka Producer
+│   ├── utils/
+│   │   ├── check_bronze.py
+│   │   └── check_gold.py
+│   └── __init__.py
+├── .env                          # Secrets 
+├── pyproject.toml
+└── README.md
+
 The pipeline follows a **Lakehouse Medallion Architecture**.
 
 ---
@@ -170,5 +204,6 @@ Data quality validation with Great Expectations
 Real-time arbitrage alerting
 
 Cloud-native execution (EMR / Databricks / Kubernetes)
+
 
 
