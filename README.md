@@ -204,7 +204,7 @@ By storing raw JSON in the Bronze layer:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Fault-tolerant ingestion with Kafka buffering
 - ACID-compliant streaming analytics
@@ -245,6 +245,7 @@ Kafka Confluent Data Lineage Graph
 <p align="center">
   <img src="images/kafka_confluent_topic_lineage.png" width="900">
 </p> 
+
 
 
 
